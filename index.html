@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Medio Ambiente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Área de Medio Ambiente</h1>
+<nav>
+  <ul>
+    <li><a href="calidadaire">Calidad del aire (AQI)</a></li>
+    <li><a href="ruido">Niveles de ruido ambiental</a></li>
+    <li><a href="focos">Focos de calor</a></li>
+    <li><a href="residuos">Tipo de residuo</a></li>
+    <li><a href="rio">Monitoreo del río</a></li>
+  </ul>
+</nav>
+
+<h2 id="calidadaire">1. Clasificación de calidad del aire (AQI)</h2>
+<input type="number" id="aqi" placeholder="Ingresa el AQI">
+<button onclick="clasificarAire()">Clasificar</button>
+<p id="resultadoAire"></p>
+
+<h2 id="ruido">2. Registrar niveles de ruido ambiental</h2>
+<label for="numMediciones">Número de mediciones:</label>
+<input type="number" id="numMediciones" placeholder="Cantidad de mediciones">
+<button onclick="pedirRuido()">Ingresar mediciones</button>
+<div id="ruidoInputs"></div>
+<p id="resultadoRuido"></p>
+
+<h2 id="focos">3. Contar focos de calor</h2>
+<label for="temp">Ingresa temperatura (°C) o 0 para terminar:</label>
+<input type="number" id="temp" placeholder="Temperatura">
+<button onclick="agregarFoco()">Agregar</button>
+<p id="resultadoFocos">Focos > 45°C: 0</p>
+
+<h2 id="residuos">4. Clasificación del tipo de residuo</h2>
+<label for="codigoResiduo">Código 1-4:</label>
+<input type="number" id="codigoResiduo" placeholder="Código">
+<button onclick="clasificarResiduos()">Clasificar</button>
+<p id="resultadoResiduo"></p>
+
+<h2 id="rio">5. Monitoreo de niveles del río</h2>
+<label for="nivelRio">Ingresa nivel del río (m) o 'no' para terminar:</label>
+<input type="text" id="nivelRio" placeholder="Nivel del río">
+<button onclick="registrarRio()">Agregar</button>
+<p id="resultadoRio"></p>
+
+<script src="Script.js">
+
+</script>
+
+</body>
+</html>
